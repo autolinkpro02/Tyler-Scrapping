@@ -7,6 +7,7 @@ import {
   logIngest
 } from './utils/db.js';
 
+import { classifyEvent } from './utils/classify.js';   // ⬅️ new import
 import { fetchEvents as cityBoiseFetch } from './adapters/city_boise.js';
 import { fetchEvents as icsGenericFetch } from './adapters/ics_generic.js';
 
