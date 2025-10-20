@@ -1,0 +1,45 @@
+#events-widget {
+    font-family: system-ui, sans-serif;
+    max-width: 600px;
+  }
+  .ew-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+  }
+  .ew-controls button {
+    cursor: pointer;
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .ew-controls button.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  .ew-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .ew-item {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+  }
+  .ew-item a {
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+  }
+  .ew-item .time,
+  .ew-item .venue,
+  .ew-item .price {
+    font-size: 0.9em;
+    color: #555;
+  }
+  .loading {
+    color: #888;
+  }
+  
