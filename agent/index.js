@@ -28,7 +28,7 @@ for (const ev of raw) {
       const hash = eventHash(ev);
       const isFamily = await classifyEvent(ev);
   
-      // 🕵️ verify official page
+      // verify official page
       const verification = await verifyEventDetails(ev);
   
       const payload = {
