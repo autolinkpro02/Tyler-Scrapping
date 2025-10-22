@@ -23,66 +23,6 @@ async function runAdapter(marketId, adapterKey, fetchFn) {
   let upserted = 0;
   const errors = [];
 
-//   for (const ev of raw) {
-//     try {
-//       const hash = eventHash(ev);
-//       const payload = {
-//         market_id: marketId,
-//         source_id: src.id,
-//         uid: null,
-//         hash,
-//         title: ev.title,
-//         description: ev.description,
-//         venue_name: ev.venueName,
-//         venue_address: ev.venueAddress,
-//         url_official: ev.urlOfficial,
-//         starts_at: ev.startsAt,
-//         ends_at: ev.endsAt,
-//         price_min: ev.priceMin,
-//         price_max: ev.priceMax,
-//         is_family_friendly: ev.isFamilyFriendly,
-//         tz: 'America/Boise',
-//         raw: { adapter: adapterKey }
-//       };
-//       await upsertEvent(payload);
-//       upserted++;
-//     } catch (err) {
-//       errors.push(err.message);
-//       console.error(`❌ Error upserting ${ev.title}:`, err.message);
-//     }
-//   }
-
-// for (const ev of raw) {
-//     try {
-//       const hash = eventHash(ev);
-//       // 🧠 classify via OpenAI
-//       const isFamily = await classifyEvent(ev);
-  
-//       const payload = {
-//         market_id: marketId,
-//         source_id: src.id,
-//         uid: null,
-//         hash,
-//         title: ev.title,
-//         description: ev.description,
-//         venue_name: ev.venueName,
-//         venue_address: ev.venueAddress,
-//         url_official: ev.urlOfficial,
-//         starts_at: ev.startsAt,
-//         ends_at: ev.endsAt,
-//         price_min: ev.priceMin,
-//         price_max: ev.priceMax,
-//         is_family_friendly: isFamily,
-//         tz: 'America/Boise',
-//         raw: { adapter: adapterKey }
-//       };
-//       await upsertEvent(payload);
-//       upserted++;
-//     } catch (err) {
-//       errors.push(err.message);
-//       console.error(`❌ Error upserting ${ev.title}:`, err.message);
-//     }
-//   }
 for (const ev of raw) {
     try {
       const hash = eventHash(ev);
